@@ -1,0 +1,8 @@
+#train
+
+python train_model.py 2>&1 | tee /home/lucas/TreeClassification/log/Model_64/train_log_0.00001.log
+
+
+#test
+
+python /home/lucas/TreeClassification/scripts/test_model.py --model /home/lucas/TreeClassification/models/Model_64/resnet50_inference.prototxt --weights /home/lucas/TreeClassification/models/PretrainedModels/Model_64_Training/resnet50_0.00001_iter_190000.caffemodel --iter 362 2>&1 | tee  /home/lucas/TreeClassification/log/Model_64/test_resnet50_0.00001_iter_190000.log
