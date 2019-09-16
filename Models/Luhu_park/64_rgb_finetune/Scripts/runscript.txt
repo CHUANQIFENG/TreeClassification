@@ -1,0 +1,5 @@
+﻿#train
+python train_model.py
+
+#test
+python /TreeClassification/Models/Luhu_park/64_rgb_finetune/Scripts/test_model.py --model /TreeClassification/Models/Luhu_park/64_rgb_finetune/resnet50_inference.prototxt --weights /TreeClassification/Models/PretrainedModels/Luhu_park_64_rgb_resnet50_0.00001_iter_5000.caffemodel --iter 131

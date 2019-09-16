@@ -1,0 +1,2 @@
+﻿#train
+python train_model.py
